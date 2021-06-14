@@ -46,11 +46,11 @@ public class show_map extends AppCompatActivity implements OnMapReadyCallback {
         mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
             @Override
             public void onStyleLoaded(@NonNull Style style) {
-                CameraPosition position = new CameraPosition.Builder().target(new LatLng(-6.914744,107.609810)).zoom(15.0).tilt(20.0).build();
+                CameraPosition position = new CameraPosition.Builder().target(new LatLng(slat,slong)).zoom(15.0).tilt(20.0).build();
 
                 mapboxMap.animateCamera(CameraUpdateFactory.newCameraPosition(position), 10);
                 mapboxMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(-6.914744, 107.609810))
+                        .position(new LatLng(slat, slong))
                         .title("Posisi Anda"));
 
             }
