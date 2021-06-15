@@ -10,4 +10,9 @@ public interface JsonPlaceHolder {
     Call<responseWelcome>getwelcome();
     @POST("user/login")
     Call<postlogin>postlogin(@Body postlogin postlogin);
+    @POST("user/input")
+    Call<postdaftar>postDaftar(@Body postdaftar postdaftar);
+    @POST("user/lokasi/input")
+    Call<postLokasi>postlokasi(@Body postLokasi postLokasi);
+
 }

@@ -44,7 +44,7 @@ public class main_menu extends AppCompatActivity {
         btnregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(main_menu.this,register.class));
             }
         });
 

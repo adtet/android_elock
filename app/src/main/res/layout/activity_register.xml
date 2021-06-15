@@ -4,6 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register">
+    tools:context=".register"
+    android:background="@drawable/bg3">
+
+    <EditText
+        android:id="@+id/txtplatnomotregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form23"
+        android:hint="Plat Nomor"
+        android:inputType="textCapWords"
+        android:paddingLeft="43dp"
+        android:paddingBottom="9dp"
+        android:textColor="@color/item"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <EditText
+        android:id="@+id/txtnikregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438"
+        android:hint="NIK"
+        android:inputType="number"
+        android:textColor="@color/item"
+        android:textColorHint="@color/black"
+        android:paddingLeft="43dp"
+        android:paddingBottom="9dp"/>
+
+    <EditText
+        android:id="@+id/txtnamaregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:textColor="@color/item"
+        android:textColorHint="@color/black"
+        android:paddingLeft="43dp"
+        android:paddingBottom="9dp"/>
+
+    <EditText
+        android:id="@+id/txtjeniskendaraanregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631"
+        android:hint="Jenis Kendaraan"
+        android:inputType="text"
+        android:textColor="@color/item"
+        android:textColorHint="@color/black"
+        android:paddingLeft="43dp"
+        android:paddingBottom="9dp"/>
+
+    <EditText
+        android:id="@+id/txtpasswordregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/item"
+        android:textColorHint="@color/black"
+        android:paddingLeft="43dp"
+        android:paddingBottom="9dp"/>
+
+    <ImageButton
+        android:id="@+id/btnsignupregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_signup_signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
