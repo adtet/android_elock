@@ -7,6 +7,7 @@ public class postlogin {
     private String pesan;
     private String Lat;
     private String Lng;
+    private String plat_nomor;
 
 
     public postlogin(String nik,String password){
@@ -31,4 +32,7 @@ public class postlogin {
         return Lng;
     }
 
+    public String getPlat_nomor() {
+        return plat_nomor;
+    }
 }

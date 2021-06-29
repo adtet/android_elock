@@ -14,5 +14,7 @@ public interface JsonPlaceHolder {
     Call<postdaftar>postDaftar(@Body postdaftar postdaftar);
     @POST("user/lokasi/input")
     Call<postLokasi>postlokasi(@Body postLokasi postLokasi);
+    @POST("input/laporan")
+    Call<postLaporan>postlaporan(@Body postLaporan postLaporan);
 
 }

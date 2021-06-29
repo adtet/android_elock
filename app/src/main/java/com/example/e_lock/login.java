@@ -70,9 +70,11 @@ public class login extends AppCompatActivity {
                 if(response.code()==200){
                     postlogin postlogin1 = response.body();
                     Toast.makeText(getApplicationContext(),postlogin1.getMessage(),Toast.LENGTH_SHORT).show();
+
                     Intent i = new Intent(login.this,show_map.class);
                     i.putExtra("Lat_from_login",postlogin1.getLat());
                     i.putExtra("Lng_from_login",postlogin1.getLng());
+                    i.putExtra("plat_nomor_from_login",postlogin1.getPlat_nomor());
                     startActivity(i);
                     finish();
                 }
